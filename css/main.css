@@ -1,8 +1,39 @@
 body {
 	width: 960px;
-	margin: 0 auto;
+	margin: 0px auto;
 }
 
 ul {
 	list-style-type: none;
+}
+
+header {
+	background: #e3e3e3;
+}
+
+#gallery {
+	background: #a5a5a5;
+}
+
+#fun_facts {
+	background: #b7b7b7;
+}
+
+footer {
+	margin 0px;
+	background: #a9a9a9;
+}
+	
+h1 {
+	margin: 0;
+	padding: 30px 20px 0;
+}
+
+h2 {
+	margin: 0;
+		padding: 30px 20px 0;
+}
+
+p {
+	margin: 10px 10px 20px 30px;
 }
