@@ -37,3 +37,67 @@ h2 {
 p {
 	margin: 10px 10px 20px 30px;
 }
+
+/* nav bar */
+
+#navbar ul {
+	list-style-type: none;
+	float: right;
+	padding-right: 75px;
+	padding-top: 5px;
+	clear: right;
+	} 
+ 
+#navbar {
+	background-image: url(../images/navbar.png);
+	height: 72px;
+	background-repeat: repeat-x;
+	overflow: visible;
+}
+#navbar ul li {
+	width: 100px;
+	height: 65px;
+	background-color: #fff;
+	display: inline;
+	text-align: center;
+	vertical-align: middle;
+	} 
+ 
+#navbar ul li a {
+	text-decoration: none;
+	color: #FFF;
+	background-color: #000;
+	} 
+ 
+#navbar ul li a:hover {
+	height: 75px;
+	color: #000;
+	background-color: #FFF;
+	} 
+#neymar_logo {
+	height: 63px;
+	width: 240px;
+	float: left;
+	background-repeat: no-repeat;
+	margin-left: 50px;
+	margin-top: 3px;
+}
+
+/*Gallery*/
+
+#gallery ul {
+	border: 2px #000;
+	list-style-type: none;
+	width: 920px;
+	margin: 20px auto;
+	overflow: hidden;
+	padding: 5px;
+}
+
+#gallery li {
+	float: left;
+	margin-left: 5px;
+}
+
+
+	
