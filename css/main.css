@@ -1,61 +1,22 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Gallery*/
+
 body {
-	width: 960px;
-	margin: 0px auto;
-}
-
-ul {
-	list-style-type: none;
-}
-
-header {
 	font-family: 'Titillium Web', sans-serif;
-	background: #e3e3e3;
+	font-size: 100%;
+	margin: 0 auto;
+	max-width: 960px;
+	padding: 0 auto;
+	background-color: #e3e3e3;
 }
 
-#gallery {
-	font-family: 'Titillium Web', sans-serif;
-	margin: 0px auto;
-	padding: 30px;
-	background: #ffe84a;
-}
 
-#fun_facts {
-	margin: 0px auto;
-	padding: 30px;
-	color: #fff;
-	font-family: 'Titillium Web', sans-serif;
-	background: #19702f;
-}
 
-#fun_facts ol {
-	-moz-column-count: 2;
-	-moz-column-gap: 10px;
-}
-
-footer {
-	float: right;
-	font-family: 'Titillium Web', sans-serif;
-	margin 0px;
-	background: #fff;
-}
-	
-h1 {
-	font-family: 'Titillium Web', sans-serif;
-	margin: 0;
-	padding: 30px 20px 0;
-}
-
-h2 {
-	font-family: 'Titillium Web', sans-serif;
-	margin: 0;
-		padding: 30px 20px 0;
-}
-
-p {
-	margin: 10px 10px 20px 30px;
-}
-
-/* nav bar */
+/************************************************************************************
+									NAVBAR
+*************************************************************************************/
 
 #navbar ul {
 	list-style-type: none;
@@ -63,34 +24,41 @@ p {
 	padding-right: 75px;
 	padding-top: 5px;
 	clear: right;
-	} 
+} 
  
 #navbar {
 	background-image: url(../images/navbar.png);
-	height: 72px;
+	height: 70px;
 	background-repeat: repeat-x;
-	overflow: visible;
+	clear: both;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: -10px;
+	margin-left: 0px;
 }
+
 #navbar ul li {
 	width: 100px;
 	height: 65px;
-	background-color: #fff;
+	background-color: #000;
 	display: inline;
 	text-align: center;
 	vertical-align: middle;
-	} 
+	padding-left: 10px;
+} 
  
 #navbar ul li a {
 	text-decoration: none;
 	color: #FFF;
 	background-color: #000;
-	} 
+} 
  
 #navbar ul li a:hover {
 	height: 100%;
 	color: #000;
 	background-color: #FFF;
-	} 
+} 
+	
 #neymar_logo {
 	height: 100%;
 	width: 240px;
@@ -100,25 +68,133 @@ p {
 	margin-top: 3px;
 }
 
+/************************************************************************************
+									GALLERY
+*************************************************************************************/
+
+
+#gallery {
+	width: 100%;
+	background-color: #ffe84a;
+}
+
+#gallery_images {
+	padding: 0;
+	width: 100%;
+	background-color: #ffe84a;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	clear: both;
+}
+
+#gallery_images ul li {
+	float: left;
+	width: 50%;
+	background-color: #ffe84a;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding-top: 0%;
+	padding-right: 0%;
+	padding-bottom: 1.521%;
+	padding-left: 0%;
+}
+
+#gallery_images ul li img {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	border: 3px solid #000;	
+}
+
+#gallery ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	background-color: #ffe84a;
+	background-repeat: repeat;
+	text-align: center;
+}
+
+
+#gallery h1 {
+	padding-top: 3.125%;
+	padding-bottom: 1.05%;
+	font-size: 2.25em;
+	margin-top: 0%;
+	margin-right: auto;
+	margin-bottom: 0%;
+	margin-left: auto;
+	padding-left: 5.20%;
+}
+
+#gallery p {
+	font-size: 1.5em;
+	width: 59.3%;
+	padding-left: 7.42%;
+	padding-bottom: 2%;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+}
+
+#gallery a {
+	text-align: center;
+	margin: 50px;
+}
+
+#fun_facts a {
+	text-align: center;
+	margin: 50px;
+}
+
+/************************************************************************************
+				  				FUN FACTS
+*************************************************************************************/
+
+
+#fun_facts {
+	margin: 0px auto;
+	padding: 35px;
+	color: #fff;
+	background: #19702f;
+}
+
+footer {
+	float: right;
+	margin 0px;
+}
+
+
+
+a:link {color:#000;}      
+a:visited {color:#000;}  
+a:hover {color:#fff;}  
+a:active {color:#000;} 
+
+
+/************************************************************************************
+Normal size 
+*************************************************************************************/
+
+@media screen and (min-width: 960px) {
+
+
+/************************************************************************************
+									BANNER
+*************************************************************************************/
+
 #neymar_info {
+	margin: 0 auto;
+	padding: 20px;
 	height: 200px;
 	width: 380px;
 	float: right;
 	color: #FFF;
 	text-align: left;
-	padding-top: 150px;
-	padding-right: 60px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-}
-
-#neymar_banner {
-	background-image: url(../images/banner.jpg);
-	background-repeat: no-repeat;
-	height: 600px;
-	width: 960px;
-	margin-top: -5px;
-	z-index: -1000;
 }
 
 #button {
@@ -129,30 +205,122 @@ p {
 	margin: 0px;
 }
 
-/*Gallery*/
-
-#gallery ul {
-	border: 2px #000;
-	list-style-type: none;
-	width: 920px;
-	margin: 20px auto;
-	overflow: hidden;
-	padding: 5px;
+#neymar_banner {
+	background-image: url(../images/banner.jpg);
+	background-repeat: no-repeat;
+	height: 600px;
+	width: 960px;
+	margin-top: -5px;
 }
 
-#gallery li {
-	float: left;
-	margin-left: 5px;
+#neymar_banner img {
+	display: none;
+	visibility: hidden;
 }
 
-aside form {
-	padding-left: 370px;
+#fun_facts ol {
+	-moz-column-count: 2;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 2;
+    -webkit-column-gap: 1px;
 }
 
-a:link {color:#000;}      
-a:visited {color:#000;}  
-a:hover {color:#fff;}  
-a:active {color:#000;} 
+}
 
+/************************************************************************************
+Tablet portrait size to standard 960 (devices and browsers)
+*************************************************************************************/
 
+@media screen and (min-width: 768px) and (max-width: 959px) {
 	
+#gallery_images ul li {
+	width: 50%;
+}
+
+#neymar_banner img {
+	margin-top: -6px;
+	max-width: 100%
+}
+
+#neymar_info {
+	margin: 0 auto;
+	padding: 20px;
+	height: 250px;
+	width: 800px;
+	color: #000;
+	text-align: left;
+}
+
+}
+
+/************************************************************************************
+Mobile landscape size to tablet portrait (devices and browsers)
+*************************************************************************************/
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+#gallery_images ul li {
+	width: 50%;
+}	
+#neymar_banner img {
+	margin-top: -6px;
+	max-width: 100%
+}
+
+#neymar_info {
+	margin: 0 auto;
+	padding: 20px;
+	height: 250px;
+	width: 600px;
+	color: #000;
+	text-align: left;
+}
+
+#navbar ul {
+	list-style-type: none;
+	float: right;
+	padding-right: 15px;
+	padding-top: 5px;
+	clear: right;
+} 
+
+#neymar_logo {
+	height: 100%;
+	width: 200px;
+	float: left;
+	background-repeat: no-repeat;
+	margin-left: 50px;
+	margin-top: 3px;
+}
+
+}
+
+/************************************************************************************
+Mobile portrait size to mobile landscape size (devices and browsers)
+*************************************************************************************/
+
+@media screen and (max-width: 479px)  {
+
+#navbar ul {
+	visibility: hidden;
+	display: none;
+} 
+
+#gallery_images ul li {
+	width: 100%;
+}
+
+#neymar_banner img {
+	margin-top: -6px;
+	max-width: 100%
+}
+
+#neymar_info {
+	margin: 0 auto;
+	padding: 20px;
+	height: 350px;
+	width: 350px;
+	color: #000;
+	text-align: left;
+}
+	
+}
